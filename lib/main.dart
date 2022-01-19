@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:alvis/views/alarm_page.dart';
+import 'package:alvis/secondroute.dart';
 
 
 void main() {
   runApp(MaterialApp(
     title: 'Navigation Basics',
-    home: FirstRoute(),
+    home: FirstRoute(
+    ),
   ));
 }
 
@@ -25,7 +27,7 @@ class FirstRoute extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontSize: 20.0,
-              fontWeight: FontWeight.w800
+              fontWeight: FontWeight.w800,
             ),
             ),
             Text('먼저 목적지를 입력해 주세요.',
@@ -41,6 +43,7 @@ class FirstRoute extends StatelessWidget {
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 18.0,
+
               ),),
             Divider(
               color: Colors.white,
@@ -208,7 +211,8 @@ class FirstRoute extends StatelessWidget {
                     width: 12,
                     height: 12
                     ,
-                  ),),
+                  ),
+                  ),
 
                   SizedBox(
                     width: 10,
@@ -282,23 +286,23 @@ class FirstRoute extends StatelessWidget {
     );
   }
 }
-
-class SecondRoute extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Second Route"),
-      ),
-      body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Go back!'),
-        ),
-      ),
-    );
-  }
-}
+//
+// class SecondRoute extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text("Second Route"),
+//       ),
+//       body: Center(
+//         child: RaisedButton(
+//           onPressed: () {
+//             Navigator.pop(context);
+//           },
+//           child: Text('Go back!'),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
