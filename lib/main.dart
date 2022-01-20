@@ -186,10 +186,11 @@ class FirstRoute extends StatelessWidget {
             ),
 
             Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+
                 children: <Widget>[
                   SizedBox(
                     height: 25,
-                    width: 130,
                   ),
                   Center(
                     child: Container(

@@ -75,7 +75,7 @@ class SecondRoute extends StatelessWidget {
                   children: <Widget>[
                     SizedBox(
                       width: 40,
-                      height: 30,
+                      height: 25,
                     ),
                     Text('검색된 경로', style: TextStyle(
                       color: Colors.white,
@@ -92,6 +92,10 @@ class SecondRoute extends StatelessWidget {
                 endIndent: 40.0,
                 indent: 40.0,
               ),
+              SizedBox(
+                height: 7,
+              )
+              ,
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -132,12 +136,20 @@ class SecondRoute extends StatelessWidget {
                       ),),
                   ),],
               ),
+              SizedBox(
+                height: 7,
+              )
+              ,
               Divider(
                 color: Colors.white,
                 thickness: 1.0,
                 endIndent: 60.0,
                 indent: 60.0,
               ),
+              SizedBox(
+                height: 7,
+              )
+              ,
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -178,12 +190,20 @@ class SecondRoute extends StatelessWidget {
                       ),),
                   ),],
               ),
+              SizedBox(
+                height: 7,
+              )
+              ,
               Divider(
                 color: Colors.white,
                 thickness: 1.0,
                 endIndent: 60.0,
                 indent: 60.0,
               ),
+              SizedBox(
+                height: 7,
+              )
+              ,
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -224,6 +244,10 @@ class SecondRoute extends StatelessWidget {
                       ),),
                   ),],
               ),
+              SizedBox(
+                height: 7,
+              )
+              ,
               Divider(
                 color: Colors.white,
                 thickness: 1.5,
@@ -232,10 +256,11 @@ class SecondRoute extends StatelessWidget {
               ),
 
               Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+
                   children: <Widget>[
                     SizedBox(
                       height: 25,
-                      width: 130,
                     ),
                     Opacity(opacity: 0.2,child: Container(
                       decoration: BoxDecoration(
