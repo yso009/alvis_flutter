@@ -59,13 +59,13 @@ class SecondRoute extends StatelessWidget {
               Opacity(opacity: 0.4,child: Text('10    06',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 40
+                    fontSize: 30
                     ,fontWeight: FontWeight.w300
                 ),)),
               Opacity(opacity: 0.2,child: Text('10    07',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 40,
+                    fontSize: 20,
                   fontWeight: FontWeight.w300
                 ),)),
               SizedBox(height: 15,),
