@@ -7,13 +7,13 @@ class SecondRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[700],
+      backgroundColor: Color(0xff3282B8),
         body: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                height: 50.0,
+                height: 80.0,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -30,6 +30,9 @@ class SecondRoute extends StatelessWidget {
                 fontSize: 20,
               ),)
         ],),
+              SizedBox(
+                height: 10.0,
+              ),
               Text('언제까지 가셔야 하나요?',
                 style: TextStyle(
                   color: Colors.white,
@@ -41,31 +44,31 @@ class SecondRoute extends StatelessWidget {
               Opacity(opacity: 0.2,child: Text('10    03',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 20,
+                fontSize: 25,
                   fontWeight: FontWeight.w300
               ),)),
               Opacity(opacity: 0.4,child: Text('10    04',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 30,
+                    fontSize: 35,
                     fontWeight: FontWeight.w300
                 ),)),
               Opacity(opacity: 1,child: Text('10  :  05',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 40,
+                    fontSize: 45,
                     fontWeight: FontWeight.w300
                 ),)),
               Opacity(opacity: 0.4,child: Text('10    06',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 30
+                    fontSize: 35
                     ,fontWeight: FontWeight.w300
                 ),)),
               Opacity(opacity: 0.2,child: Text('10    07',
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 25,
                   fontWeight: FontWeight.w300
                 ),)),
               SizedBox(height: 15,),
@@ -79,13 +82,15 @@ class SecondRoute extends StatelessWidget {
                     ),
                     Text('검색된 경로', style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 20,
                       fontWeight: FontWeight.w300
                     ),),
 
                   ],
               ),
-
+              SizedBox(
+                height: 15,
+              ),
               Divider(
                 color: Colors.white,
                 thickness: 1.5,
@@ -114,7 +119,7 @@ class SecondRoute extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(5.0))
                     ),
                     width: 75,
-                    height: 26,
+                    height: 22,
                   ),
                   Container(child:
                   Text('1시간 10분',
@@ -123,6 +128,9 @@ class SecondRoute extends StatelessWidget {
                         color: Colors.white
                     ),),),
                 ],
+              ),
+              SizedBox(
+                height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -141,7 +149,7 @@ class SecondRoute extends StatelessWidget {
               )
               ,
               Divider(
-                color: Colors.white,
+                color: Color(0xff95BDD9),
                 thickness: 1.0,
                 endIndent: 60.0,
                 indent: 60.0,
@@ -168,7 +176,7 @@ class SecondRoute extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(5.0))
                     ),
                     width: 75,
-                    height: 25,
+                    height: 22,
                   ),
                   Container(child:
                   Text('1시간 34분',
@@ -177,6 +185,9 @@ class SecondRoute extends StatelessWidget {
                         color: Colors.white
                     ),),),
                 ],
+              ),
+              SizedBox(
+                height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -195,7 +206,7 @@ class SecondRoute extends StatelessWidget {
               )
               ,
               Divider(
-                color: Colors.white,
+                color: Color(0xff95BDD9),
                 thickness: 1.0,
                 endIndent: 60.0,
                 indent: 60.0,
@@ -222,7 +233,7 @@ class SecondRoute extends StatelessWidget {
                         borderRadius: BorderRadius.all(Radius.circular(5.0))
                     ),
                     width: 75,
-                    height: 26,
+                    height: 22,
                   ),
                   Container(child:
                   Text('1시간 21분',
@@ -231,6 +242,9 @@ class SecondRoute extends StatelessWidget {
                         color: Colors.white
                     ),),),
                 ],
+              ),
+              SizedBox(
+                height: 10,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -260,7 +274,7 @@ class SecondRoute extends StatelessWidget {
 
                   children: <Widget>[
                     SizedBox(
-                      height: 25,
+                      height: 65,
                     ),
                     Opacity(opacity: 0.2,child: Container(
                       decoration: BoxDecoration(
@@ -311,19 +325,23 @@ class SecondRoute extends StatelessWidget {
                   ]
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+
                 children: <Widget>[
 
-                  SizedBox(width: 80,),
 
                   ButtonTheme(
-                    height: 30,
+                    minWidth: 110,
+                    height: 40,
                     child : RaisedButton(
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)
+                          borderRadius: BorderRadius.circular(20)
                       ),
                       color: Colors.white,
                       textColor: Colors.blue[700],
-                      child: Text('PREV'),
+                      child: Text('P R E V',style: TextStyle(
+                          fontSize: 20
+                      ),),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -331,16 +349,19 @@ class SecondRoute extends StatelessWidget {
                         );
                       },
                     ),),
-                  SizedBox(width: 80,),
+                  SizedBox(width: 30,),
 
                   ButtonTheme(
-                    height: 30,
+                    minWidth: 110,
+                    height: 40,
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
+                          borderRadius: BorderRadius.circular(20)),
                       color: Colors.white,
                       textColor: Colors.blue[700],
-                      child: Text('NEXT'),
+                      child: Text('N E X T',style: TextStyle(
+                          fontSize: 20
+                      ),),
                       onPressed: () {
                         Navigator.push(
                           context,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:alvis/secondroute.dart';
+import 'package:alvis/fourthroute.dart';
 
 import 'main.dart';
 
@@ -9,13 +10,12 @@ class ThirdRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[700],
-      body: Center(
+      backgroundColor: Color(0xff3282B8),      body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
               SizedBox(
-              height: 50.0,
+              height: 80.0,
             ),
             Container(
               child: Text("거의 다 왔습니다.",
@@ -24,6 +24,9 @@ class ThirdRoute extends StatelessWidget {
                 fontSize: 20.0,
                 fontWeight: FontWeight.w800,
               ),),
+            ),
+            SizedBox(
+              height: 10.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -68,11 +71,15 @@ class ThirdRoute extends StatelessWidget {
               endIndent: 40.0,
               indent: 40.0,
             ),
+            SizedBox(
+              height: 8.0,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
 
             Container(
+
               padding: EdgeInsets.only(left: 20),
                 child: Text('맛있는 아침 먹기', style: TextStyle(
                   color: Colors.white,
@@ -101,11 +108,17 @@ class ThirdRoute extends StatelessWidget {
 
               ],
             ),
+            SizedBox(
+              height: 8.0,
+            ),
             Divider(
-              color: Colors.white,
+              color: Color(0xff95BDD9),
               thickness: 1.0,
-              endIndent: 60.0,
-              indent: 60.0,
+              endIndent: 50.0,
+              indent: 50.0,
+            ),
+            SizedBox(
+              height: 8.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -140,11 +153,17 @@ class ThirdRoute extends StatelessWidget {
 
               ],
             ),
+            SizedBox(
+              height: 8.0,
+            ),
             Divider(
-              color: Colors.white,
+              color: Color(0xff95BDD9),
               thickness: 1.0,
-              endIndent: 60.0,
-              indent: 60.0,
+              endIndent: 50.0,
+              indent: 50.0,
+            ),
+            SizedBox(
+              height: 8.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -178,11 +197,17 @@ class ThirdRoute extends StatelessWidget {
 
               ],
             ),
+            SizedBox(
+              height: 8.0,
+            ),
             Divider(
-              color: Colors.white,
+              color: Color(0xff95BDD9),
               thickness: 1.0,
-              endIndent: 60.0,
-              indent: 60.0,
+              endIndent: 50.0,
+              indent: 50.0,
+            ),
+            SizedBox(
+              height: 8.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -218,11 +243,17 @@ class ThirdRoute extends StatelessWidget {
 
               ],
             ),
+            SizedBox(
+              height: 8.0,
+            ),
             Divider(
-              color: Colors.white,
+              color: Color(0xff95BDD9),
               thickness: 1.0,
-              endIndent: 60.0,
-              indent: 60.0,
+              endIndent: 50.0,
+              indent: 50.0,
+            ),
+            SizedBox(
+              height: 8.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -257,12 +288,18 @@ class ThirdRoute extends StatelessWidget {
 
               ],
             ),
+            SizedBox(
+              height: 8.0,
+            ),
 
             Divider(
               color: Colors.white,
               thickness: 1.5,
               endIndent: 40.0,
               indent: 40.0,
+            ),
+            SizedBox(
+              height: 8.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -282,7 +319,7 @@ class ThirdRoute extends StatelessWidget {
                   fontSize: 15
                 ),),
                 SizedBox(
-                  width: 55,
+                  width: 45,
                 )
               ],
             ),
@@ -290,7 +327,7 @@ class ThirdRoute extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   SizedBox(
-                    height: 45,
+                    height: 75,
                   ),
                   Opacity(opacity: 0.2,child: Container(
                     decoration: BoxDecoration(
@@ -341,19 +378,23 @@ class ThirdRoute extends StatelessWidget {
                 ]
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+
               children: <Widget>[
 
-                SizedBox(width: 80,),
 
                 ButtonTheme(
-                  height: 30,
+                  minWidth: 110,
+                  height: 40,
                   child : RaisedButton(
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)
+                        borderRadius: BorderRadius.circular(20)
                     ),
                     color: Colors.white,
                     textColor: Colors.blue[700],
-                    child: Text('PREV'),
+                    child: Text('P R E V',style: TextStyle(
+                        fontSize: 20
+                    ),),
                     onPressed: () {
                       Navigator.push(
                         context,
@@ -361,20 +402,23 @@ class ThirdRoute extends StatelessWidget {
                       );
                     },
                   ),),
-                SizedBox(width: 80,),
+                SizedBox(width: 30,),
 
                 ButtonTheme(
-                  height: 30,
+                  minWidth: 110,
+                  height: 40,
                   child: RaisedButton(
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
+                        borderRadius: BorderRadius.circular(20)),
                     color: Colors.white,
                     textColor: Colors.blue[700],
-                    child: Text('NEXT'),
+                    child: Text('P R E V',style: TextStyle(
+                        fontSize: 20
+                    ),),
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => ThirdRoute()),
+                        MaterialPageRoute(builder: (context) => FourthRoute()),
                       );
                     },
                   ),

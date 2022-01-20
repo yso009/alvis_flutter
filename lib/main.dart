@@ -21,7 +21,7 @@ class FirstRoute extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             SizedBox(
-              height: 50.0,
+              height: 80.0,
             ),
             Text('안녕하세요.',
             style: TextStyle(
@@ -30,6 +30,9 @@ class FirstRoute extends StatelessWidget {
               fontWeight: FontWeight.w800,
             ),
             ),
+            SizedBox(
+              height: 10.0,
+            ),
             Text('먼저 목적지를 입력해 주세요.',
             style: TextStyle(
               color: Colors.white,
@@ -37,7 +40,7 @@ class FirstRoute extends StatelessWidget {
             ),
             ),
             SizedBox(
-              height: 20.0,
+              height: 40.0,
             ),
             Text('충청북도 청주시 청원구 대성로 298',
               style: TextStyle(
@@ -45,6 +48,9 @@ class FirstRoute extends StatelessWidget {
                   fontSize: 18.0,
 
               ),),
+            SizedBox(
+              height: 10.0,
+            ),
             Divider(
               color: Colors.white,
               thickness: 1.5,
@@ -56,7 +62,7 @@ class FirstRoute extends StatelessWidget {
             ),
             Container(
               width: 330,
-              height: 220,
+              height: 250,
               // child: Image.asset('assets/images/map.png'),
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -72,7 +78,7 @@ class FirstRoute extends StatelessWidget {
               children: <Widget>[
                 SizedBox(
                   width: 45,
-                  height: 50,
+                  height: 55,
                 ),
                 Center(
                 child: Container(
@@ -247,14 +253,17 @@ class FirstRoute extends StatelessWidget {
 
 
               ButtonTheme(
-                height: 30,
+                minWidth: 110,
+                height: 40,
               child : RaisedButton(
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)
+                  borderRadius: BorderRadius.circular(20)
                 ),
                 color: Colors.white,
                 textColor: Colors.blue[700],
-                  child: Text('PREV'),
+                  child: Text('P R E V',style: TextStyle(
+                    fontSize: 20
+                  ),),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -262,16 +271,19 @@ class FirstRoute extends StatelessWidget {
                     );
                   },
                 ),),
-              SizedBox(width: 80,),
+              SizedBox(width: 30,),
 
               ButtonTheme(
-                height: 30,
+                minWidth: 110,
+                height: 40,
                 child: RaisedButton(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
+                    borderRadius: BorderRadius.circular(20)),
                   color: Colors.white,
                   textColor: Colors.blue[700],
-                  child: Text('NEXT'),
+                  child: Text('N E X T',style: TextStyle(
+                    fontSize: 20
+                  ),),
                    onPressed: () {
                     Navigator.push(
                       context,
