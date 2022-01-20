@@ -65,7 +65,21 @@ flutter:
     - assets/images/icon.png
     - assets/images/pen.png
     - assets/images/bell.png
+    - assets/images/alarm_header.png
+    - assets/images/am_icon.png
+    - assets/images/back_night.png
+    - assets/images/backg_night.png
+    - assets/images/crown.png
+    - assets/images/pm_icon.png
+    - assets/images/snowback.png
+    - assets/images/user.png
     - assets/images/circle.png
+    - assets/images/button_on.png
+    - assets/images/button_off.png
+    - assets/images/setting.png
+    - assets/images/mypage.png
+    - assets/images/on_mypage.png
+    - assets/images/on_main.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

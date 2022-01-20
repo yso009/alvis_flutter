@@ -1,5 +1,7 @@
+import 'package:alvis/main2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:alvis/fourthroute.dart';
 
 class Alarmpage extends StatelessWidget {
   const Alarmpage({Key? key}) : super(key: key);
@@ -119,7 +121,7 @@ class Alarmpage extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => Alarmpage()),
+                                MaterialPageRoute(builder: (context) => FourthRoute()),
                               );
                             },
                           ),),
@@ -139,7 +141,7 @@ class Alarmpage extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => Alarmpage()),
+                                MaterialPageRoute(builder: (context) => MainPage()),
                               );
                             },
                           ),
