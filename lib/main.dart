@@ -248,10 +248,7 @@ class FirstRoute extends StatelessWidget {
             ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-
             children: <Widget>[
-
-
               ButtonTheme(
                 minWidth: 110,
                 height: 40,

@@ -1,15 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:alvis/thirdroute.dart';
+import 'package:alvis/alarmpage.dart';
 
 class FourthRoute extends StatelessWidget {
-
   const FourthRoute({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff3282B8),      body: Center(
+      backgroundColor: Color(0xff3282B8),
+      body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
@@ -339,7 +340,7 @@ class FourthRoute extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => FourthRoute()),
+                        MaterialPageRoute(builder: (context) => Alarmpage()),
                       );
                     },
                   ),

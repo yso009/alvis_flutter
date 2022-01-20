@@ -269,7 +269,6 @@ class ThirdRoute extends StatelessWidget {
                 Row(
                   children: <Widget>[
                     Container(
-
                       child: Text('약 05분 소요', style: TextStyle(
                           color:Colors.white,
                           fontSize: 16,
