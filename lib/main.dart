@@ -15,7 +15,7 @@ class FirstRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[700],
+      backgroundColor: Color(0xff3282B8),
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -118,7 +118,7 @@ class FirstRoute extends StatelessWidget {
             ),
 
             Divider(
-              color: Colors.white,
+              color: Color(0xff95BDD9),
               thickness: 1.0,
               endIndent: 60.0,
               indent: 60.0,
@@ -190,7 +190,7 @@ class FirstRoute extends StatelessWidget {
 
                 children: <Widget>[
                   SizedBox(
-                    height: 25,
+                    height: 65,
                   ),
                   Center(
                     child: Container(
@@ -241,9 +241,10 @@ class FirstRoute extends StatelessWidget {
                 ]
             ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+
             children: <Widget>[
 
-              SizedBox(width: 80,),
 
               ButtonTheme(
                 height: 30,
