@@ -1,7 +1,8 @@
 import 'package:alvis/main.dart';
-import 'package:alvis/main2.dart';
 import 'package:flutter/material.dart';
 import 'package:alvis/constants/theme_data.dart';
+
+import 'firstroute.dart';
 
 class Mypage extends StatelessWidget {
   const Mypage({Key? key}) : super(key: key);

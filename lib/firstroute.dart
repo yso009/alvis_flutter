@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:alvis/views/alarm_page.dart';
 import 'package:alvis/secondroute.dart';
-import 'package:alvis/main2.dart';
+import 'package:alvis/main.dart';
 import 'package:alvis/mypage.dart';
 
 
